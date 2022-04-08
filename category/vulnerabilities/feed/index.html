@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vulnerabilities Archives - Infinity Network Solutions</title>
+	<atom:link href="https://test.infinityns.ca/category/vulnerabilities/feed/" rel="self" type="application/rss+xml" />
+	<link>https://test.infinityns.ca</link>
+	<description>We&#039;re experts at being experts.</description>
+	<lastBuildDate>Tue, 14 Aug 2018 15:09:32 +0000</lastBuildDate>
+	<language>en-CA</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.3</generator>
+
+<image>
+	<url>https://test.infinityns.ca/wp-content/uploads/2018/02/cropped-Infinity-symbol-32x32.png</url>
+	<title>vulnerabilities Archives - Infinity Network Solutions</title>
+	<link>https://test.infinityns.ca</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Vulnerabilities in Fax Protocol Let Hackers Infiltrate Networks via Fax Machines</title>
+		<link>https://test.infinityns.ca/vulnerabilities-fax-protocol-let-hackers-infiltrate-networks-via-fax-machines/</link>
+		
+		<dc:creator><![CDATA[Jayne]]></dc:creator>
+		<pubDate>Tue, 14 Aug 2018 14:47:54 +0000</pubDate>
+				<category><![CDATA[printers]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[technology]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+		<guid isPermaLink="false">https://test.infinityns.ca/?p=1886</guid>
+
+					<description><![CDATA[<p>By Catalin Cimpanu August 13, 2018 Two recently discovered vulnerabilities in the fax protocol can transform fax machines into entry points for hackers into corporate networks, two Check Point researchers revealed last week in a talk given at the DEF CON 26 security conference held in Las Vegas. Named &#8220;Faxploit,&#8221; this attack targets the ITU T.30 [...]</p>
+<p>The post <a rel="nofollow" href="https://test.infinityns.ca/vulnerabilities-fax-protocol-let-hackers-infiltrate-networks-via-fax-machines/">Vulnerabilities in Fax Protocol Let Hackers Infiltrate Networks via Fax Machines</a> appeared first on <a rel="nofollow" href="https://test.infinityns.ca">Infinity Network Solutions</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<div class="cz-news-story-title-section">
+<div class="cz-news-title-left-area">By <a class="author" style="font-size: 14.4px;" href="https://www.bleepingcomputer.com/author/catalin-cimpanu/" rel="author">Catalin Cimpanu</a></div>
+<p><span style="font-size: 14.4px;">August 13, 2018</span></p>
+</div>
+<div class="articleBody">
+<p><img loading="lazy" src="https://www.bleepstatic.com/content/posts/2018/08/13/Faxploit.jpg" alt="Fax machine" width="1250" height="455" /></p>
+<p>Two recently discovered vulnerabilities in the fax protocol can transform fax machines into entry points for hackers into corporate networks, two Check Point researchers revealed last week in a talk given at the DEF CON 26 security conference held in Las Vegas.</p>
+<p>Named &#8220;Faxploit,&#8221; this attack targets the ITU T.30 fax protocol, according to a copy of the <a href="https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/DEFCON-26-Yaniv-Balmas-What-The-FAX.pdf" target="_blank" rel="nofollow noopener">DEF CON presentation</a>given by Eyal Itkin and Yaniv Balmas last week.</p>
+<p>More specifically, Faxploit leverages two buffer overflows in the fax protocol components that handle DHT and COM markers —CVE-2018-5924 and CVE-2018-5925, respectively.</p>
+<div id="FIOnDemandWrapper_fiInstance_101902_0_2222114" class="FIOnDemandWrapper">
+<div class="apd_static_banner "></div>
+</div>
+<h2>Fax machines used as entry points into corporate networks</h2>
+<p>Itkin and Balmas say that an attacker can send malformed fax images to a fax machine containing code that exploits these two vulnerabilities and then gain remote code execution rights over the targeted device, allowing the hacker to run his own code and take over the machine.</p>
+<p>From here, they say that an attacker can download and deploy other hacking tools that scan the local network and compromise nearby devices.</p>
+<p>The two researchers have recorded a demo of a Faxploit attack that compromises a fax machine and then uses this machine to download and deploy the EternalBlue exploit that infects nearby computers exposed via the SMB protocol.</p>
+<h2>Faxploit carried out via phone lines, not Internet connection</h2>
+<p>Itkin and Balmas say the Faxploit attack is dead simple, as a hacker only needs the victim&#8217;s fax number to target an organization.</p>
+<div id="FIOnDemandWrapper_fiInstance_101900_3_2222114" class="FIOnDemandWrapper">
+<div class="apd_static_banner "><span style="color: #555555; font-size: 14.4px;">Since most organizations print fax numbers on their websites, and Google has indexed over 300 million fax numbers, hackers can use Faxploit to target any organization around the world they want.</span></div>
+</div>
+<p><img loading="lazy" src="https://www.bleepstatic.com/images/news/u/986406/attacks/Vulnerabilities/faxploit-attack.png" alt="Faxploit attack" width="700" height="306" /></p>
+<p>Furthermore, no direct Internet connection is needed to the actual fax machine as the attack code comes in via the phone line. This also makes preventing Faxploit almost impossible, as no security software scans incoming faxes.</p>
+<p>The only way to prevent Faxploit attacks is to apply patches to individual fax machines and all-in-one office printers, which also come with an embedded fax machine.</p>
+<h2>HP released patches, other fax vendors vulnerable too</h2>
+<p>At the time of writing, only HP has addressed Faxploit. The company released <a href="https://support.hp.com/us-en/document/c06097712" target="_blank" rel="nofollow noopener">patches</a> last week for HP Officejet all-in-one printers, the fax machine that the Check Point researchers used for recording their demo video.</p>
+<p>&#8220;We strongly believe that similar vulnerabilities apply to other fax vendors too as this research concerns the fax communication protocols in general,&#8221; Check Point said today.</p>
+<p>But while other vendors test their devices and release patches in the coming months, there is also a way to limit the impact of Faxploit attacks, if they ever happen.</p>
+<p>Itkin and Balmas say the simplest defense to neutralize Faxploit attacks is network segmentation. By breaking large corporate networks into smaller ones or by isolating fax machines on their own subnetworks, companies can limit the type of data an attacker can gain access to via this attack.</p>
+</div>
+<p><a href="https://www.bleepingcomputer.com/news/security/vulnerabilities-in-fax-protocol-let-hackers-infiltrate-networks-via-fax-machines/">https://www.bleepingcomputer.com/news/security/vulnerabilities-in-fax-protocol-let-hackers-infiltrate-networks-via-fax-machines/</a></p>
+<p>&nbsp;</p>
+<p>The post <a rel="nofollow" href="https://test.infinityns.ca/vulnerabilities-fax-protocol-let-hackers-infiltrate-networks-via-fax-machines/">Vulnerabilities in Fax Protocol Let Hackers Infiltrate Networks via Fax Machines</a> appeared first on <a rel="nofollow" href="https://test.infinityns.ca">Infinity Network Solutions</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
